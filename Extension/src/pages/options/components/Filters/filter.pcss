@@ -6,8 +6,8 @@
     min-height: 70px;
 
     &__title {
-        display: inline-block;
-        word-break: break-word;
+        display: flex;
+        max-width: 420px;
         font-weight: 500;
         font-size: 16px;
         margin-bottom: 4px;
@@ -19,6 +19,9 @@
 
     &__title-in {
         margin-right: 12px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
     &:last-child {
