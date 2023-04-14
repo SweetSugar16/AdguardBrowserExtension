@@ -6,15 +6,11 @@
     min-height: 70px;
 
     &__title {
-        display: flex;
-        max-width: 420px;
+        display: inline-block;
+
         font-weight: 500;
         font-size: 16px;
         margin-bottom: 4px;
-    }
-
-    &__search {
-        background-color: var(--orange400);
     }
 
     &__title-in {
@@ -23,6 +19,17 @@
         text-overflow: ellipsis;
         overflow: hidden;
     }
+
+    &__title-constraint {
+        display: flex;
+        max-width: 420px;
+    }
+
+
+    &__search {
+        background-color: var(--orange400);
+    }
+
 
     &:last-child {
         box-shadow: none;

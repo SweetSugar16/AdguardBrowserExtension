@@ -156,18 +156,19 @@ const Filter = observer(({ filter }) => {
                 <div className="filter__info">
                     <div className="setting__container setting__container--horizontal">
                         <div className="setting__inner">
-                            <Popover text={name}>
-                                <div className="filter__title">
-                                    <span className="filter__title-in">
+                            <div className="filter__title">
+                                <Popover text={name}>
+                                    <div className="filter__title-constraint">
+                                        <span className="filter__title-in">
+                                            <HighlightSearch string={name} />
+                                        </span>
+                                    </div>
+                                </Popover>
+                                <span className="filter__controls">
+                                    {renderRemoveButton()}
+                                </span>
+                            </div>
 
-                                        <HighlightSearch string={name} />
-
-                                    </span>
-                                    <span className="filter__controls">
-                                        {renderRemoveButton()}
-                                    </span>
-                                </div>
-                            </Popover>
                             <div className="filter__desc">
                                 <div className="filter__desc-item">
                                     {description}
